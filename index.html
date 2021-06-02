@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div id="main">
+    <h1 id="title"> Survey Form</h1>
+    <p id="description"> This is the description of the form.</p>
+    <form id="survey-form">
+        <label for="name" id="name-label"> Name: </label><br>
+        <input type="text" id="name" name="name" required placeholder="Name"><br>
+        <label for="email" id="email-label">Email:</label><br>
+        <input type="email" id="email" name="email" required placeholder="email@something.com"><br>
+        <label for="number" id="number-label"> Number: </label><br>
+        <input type="number" id="number" name="number" required min="0000000000" max="9999999999"
+            placeholder="Phone number"><br>
+
+        <label for="dropdown">Drowpdown:</label> <br>
+        <select name="dropdown" id="dropdown">
+            <option value="option1">First Option</option>
+            <option value="option2">Second Option</option>
+            <option value="option3">Third Option</option>
+            <option value="option4">Fourth Option</option>
+        </select>
+        <br>
+        <fieldset id="radio-buttons">
+        <input type="radio" id="value1" name="radioB" value="value1">
+        <label for="value1">Value 1</label><br>
+        <input type="radio" id="value2" name="radioB" value="value2">
+        <label for="value2">Value 2</label><br>
+        <input type="radio" id="value3" name="radioB" value="value3">
+        <label for="value3">Value 3</label>
+    </fieldset>
+        <!-- <br> -->
+        <fieldset id="checkboxes">
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label><br>
+    </fieldset>
+        <textarea rows="4" cols="50" name="comment" form="usrform"> Any comments? Let us know!</textarea>
+        <br>
+        <input id="submit" type="submit" value="Submit">
+
+    </form>
+</div>
+</body>
+
+</html>
